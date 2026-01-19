@@ -1,0 +1,113 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+h2 {
+  color:white;
+}
+
+body {
+  background-image: url("trial1.jpg");
+  background-attachment:fixed;
+  background-size: cover;
+  flex: 1; /* Set the body to take the remaining available width */
+  font-family: 'Brush Script MT', cursive;
+  font-size:25px;
+  color: rgb(255, 255, 255);
+}
+
+.sidebar {
+  color: #000000;
+  padding: 20px;
+  flex: 0 0 250px; /* Set the width of the sidebar */
+}
+
+.sidebar h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  display: block; /* Change to block to take the full width */
+  color: white;
+  padding: 20px 10px; /* Increase the top and bottom padding to increase the height */
+  text-decoration: none;
+  font-size: 30px;
+  border-radius: 20px;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #00ccff;
+  text-decoration: underline;
+}
+
+.sidebar ul ul {
+  margin-top: 5px;
+  display: none;
+}
+
+.sidebar li:hover ul {
+  display: block;
+}
+
+.sidebar ul ul li {
+  margin: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.navbar {
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+}
+.p{
+  font-size:30px;
+}
+.navbar a {
+  color: #ffffff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 30px;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #ffcc00;
+}
+
+.navbar-brand a {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #f5f5f5;
+  padding: 5px;
+  text-align: center;
+  font-size: 23px;
+  color: #333;
+  margin-top: auto; /* This will push the footer to the bottom */
+  margin-left: -500px; /* Add negative margin to overlap the sidebar */
+  width: calc(100% + 500px); /* Increase the width to cover the overlap */
+}

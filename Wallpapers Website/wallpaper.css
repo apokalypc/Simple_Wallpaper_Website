@@ -1,0 +1,49 @@
+body {
+    font-family: 'Brush Script MT', cursive;
+    background-image: url("trial.jpg");
+    background-attachment:fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+  
+  .category {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .category h2 {
+    font-size: 30px;
+  }
+  
+  .wallpaper {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+  }
+  
+  .wallpaper img {
+    width: 400px; /* Set the width of the image to 500px */
+    height: 400px; /* Set the height of the image to 500px */
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .wallpaper img:hover {
+    transform: scale(1.2);
+
+  }
+  
+  .wallpaper p {
+    margin: 5px 0;
+  }
+  
